@@ -1,0 +1,11 @@
+TextWindow.Write("Enter the length: ")
+length = TextWindow.ReadNumber()
+TextWindow.Write("Enter the width: ")
+width = TextWindow.ReadNumber()
+TextWindow.Write("Enter the height: ")
+height = TextWindow.ReadNumber()
+TextWindow.Write("Enter the number of beds: ")
+number = TextWindow.ReadNumber()
+
+totalVolume = length * width * height * number / 27
+TextWindow.WriteLine("You need " + math.Round(totalVolume) + "cu yd of top soil")

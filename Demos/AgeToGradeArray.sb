@@ -1,0 +1,17 @@
+i = 0
+While age[i] <> 0
+  i = i + 1
+  TextWindow.Write("Enter an age: ")
+  age[i] = TextWindow.ReadNumber()
+EndWhile
+
+For count = 1 To i - 1
+  If age[count] = 5 Then
+    grade = "K"
+  elseIf age[count] > 5 And age[count] < 18 then
+    grade = age[count] - 5
+  else
+    grade = "age out of range"
+  EndIf 
+  TextWindow.WriteLine("Age: " + age[count] + ", Grade: " + grade)
+EndFor

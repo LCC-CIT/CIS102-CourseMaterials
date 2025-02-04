@@ -1,0 +1,12 @@
+TextWindow.Write("Enter tractor weight: ")
+tractorWeight = TextWindow.ReadNumber()
+totalWeight = tractorWeight
+answer = "y"
+While answer = "y" Or answer = "Y"
+  TextWindow.Write("Enter trailer weight: ")
+  trailerWeight = TextWindow.ReadNumber()
+  totalWeight = totalWeight + trailerWeight
+  TextWindow.Write("Do it again? (y/n): ")
+  answer = TextWindow.Read()
+EndWhile
+TextWindow.WriteLine("Total weight: " + totalWeight)

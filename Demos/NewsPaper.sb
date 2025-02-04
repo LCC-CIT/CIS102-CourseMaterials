@@ -1,0 +1,11 @@
+TextWindow.Write("Enter the number of newspapers: ")
+numberOfPapers = TextWindow.ReadNumber()
+
+TextWindow.Write("Enter the number of folios per paper: ")
+numberOfFolios = TextWindow.ReadNumber()
+
+TextWindow.Write("Enter the length (longest dimension) of a folio in feet: ")
+lengthOfFolio = TextWindow.ReadNumber()
+
+totalLength = numberOfPapers * numberOfFolios * lengthOfFolio
+TextWindow.WriteLine("Total length: " + totalLength + " feet")

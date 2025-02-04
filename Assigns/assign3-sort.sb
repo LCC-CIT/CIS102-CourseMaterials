@@ -1,0 +1,22 @@
+TextWindow.Write("Enter the first number: ")
+num1 = TextWindow.Read()
+TextWindow.Write("Enter the second number: ")
+num2 = TextWindow.Read()
+TextWindow.Write("Enter the third number: ")
+num3 = TextWindow.Read()
+If num1 < num2 Then
+  temp = num1
+  num1 = num2
+  num2 = temp
+  EndIf
+If num2 < num3 Then
+  temp = num2
+  num2 = num3
+  num3 = temp
+  EndIf
+If num3 > num1 Then
+  temp = num1
+  num1 = num2
+  num2 = temp
+  EndIf
+TextWindow.WriteLine(num1 + ", " + num2 + ", " + num3)  

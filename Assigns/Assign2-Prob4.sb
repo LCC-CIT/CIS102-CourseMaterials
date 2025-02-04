@@ -1,0 +1,7 @@
+TextWindow.Write("Enter an integer: ")
+integer1 = TextWindow.Read()
+TextWindow.Write("Enter another integer: ")
+integer2 = TextWindow.Read()
+sum = integer1 + integer2
+TextWindow.WriteLine("Sum=" + sum)
+

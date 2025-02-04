@@ -1,0 +1,9 @@
+TextWindow.Write("Enter tractor weight: ")
+weight = TextWindow.ReadNumber()
+totalWeight = weight
+While weight > 0
+  TextWindow.Write("Enter trailer weight: ")
+  weight = TextWindow.ReadNumber()
+  totalWeight = totalWeight + weight
+EndWhile
+TextWindow.WriteLine("Total weight: " + totalWeight)

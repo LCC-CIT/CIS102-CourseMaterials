@@ -1,0 +1,11 @@
+TextWindow.Write("Enter sheet length: ")
+sheetLength = TextWindow.Read()
+TextWindow.Write("Enter pages per newspaper: ")
+pagesPerPaper = TextWindow.Read()
+TextWindow.Write("Enter Pages per sheet: ")
+pagesPerSheet = TextWindow.Read()
+TextWindow.Write("Enter number of newspapers: ")
+numPapers = TextWindow.Read()
+totalFeet = sheetLength * pagesPerPaper / pagesPerSheet * numPapers
+TextWindow.WriteLine("You will need " + totalFeet + " feet of paper")
+

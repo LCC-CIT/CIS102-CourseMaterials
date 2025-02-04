@@ -1,0 +1,23 @@
+largest = 0
+For count = 1 To 5
+  TextWindow.Write("Enter a number: ")
+  number[count] = TextWindow.ReadNumber()
+  
+  If number[count] > largest Then
+    largest = number[count]
+  EndIf
+EndFor
+TextWindow.WriteLine("Largest: " + largest)
+
+For count = 1 To 5
+  TextWindow.WriteLine("number" + count + ": " + number[count])
+EndFor
+
+'Find the smallest 
+smallest = 100000000000
+For count = 1 To 5
+  If number[count] < smallest Then
+    smallest = number[count]
+    endif
+EndFor
+TextWindow.WriteLine("Smallest: " + smallest)

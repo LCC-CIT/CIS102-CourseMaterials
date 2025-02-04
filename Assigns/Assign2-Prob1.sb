@@ -1,0 +1,7 @@
+TextWindow.Write("Enter length: ")
+length = TextWindow.Read()
+TextWindow.Write("Enter width: ")
+width = TextWindow.Read()
+area = length * width
+TextWindow.WriteLine("Area=" + )
+

@@ -1,0 +1,24 @@
+t = 0
+t1 = 0
+t2 = 0
+t3 = 0
+tw = 0
+
+TextWindow.Write("input tractor weight = ")
+t = TextWindow.ReadNumber()
+if (t > 0) Then
+  TextWindow.Write("input trailer one weight = ")
+  t1 = TextWindow.ReadNumber()
+EndIf
+  if (t1 > 0) Then
+    TextWindow.Write("input trailer two weight = ")
+    t2 = TextWindow.ReadNumber()
+  EndIf
+    if (t2 > 0) Then
+      TextWindow.Write("input trailer three weight = ")
+      t3 = TextWindow.ReadNumber()
+    EndIf
+
+tw = t + t1 + t2 + t3
+
+TextWindow.WriteLine("Total Weight of Tractor/Trailer is " + tw)

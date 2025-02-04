@@ -1,0 +1,14 @@
+TextWindow.Write("Enter age: ")
+age = TextWindow.ReadNumber()
+
+'validate age
+If age > 0 And age < 150 Then
+  discount = age
+Else
+  TextWindow.WriteLine("You're lying about your age!")
+EndIf
+
+salePrice = 500 - age 
+TextWindow.WriteLine("Sale price: " + salePrice)
+
+  

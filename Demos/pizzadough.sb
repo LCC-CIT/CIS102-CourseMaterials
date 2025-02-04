@@ -1,0 +1,26 @@
+'CALC volume = pi * (8 / 2)^2 * thickness * numSmall
+'CALC volume = volume  + pi * (12 / 2)^2 * thickness * numLarge
+'CALC volume =  volume + pi * (18 / 2)^2 * thickness * numXLarge
+'weight = volume * 0.5   // weight in ounces
+'weight = weight / 16	// weight pounds
+
+TextWindow.Write("Enter the number of small pizzas:")
+numSmall = TextWindow.ReadNumber()
+TextWindow.Write("Enter the number of large pizzas:")
+numLarge = TextWindow.ReadNumber()
+TextWindow.Write("Enter the number of extra large pizzas:")
+numXLarge = TextWindow.ReadNumber()
+TextWindow.Write("Enter the thickness of the crusts:")
+thickness = TextWindow.ReadNumber()
+
+volume = Math.Pi * Math.Power(8/2, 2) * thickness * numSmall
+volume = volume + Math.Pi * Math.Power(12/2, 2) * thickness * numLarge
+volume = volume + Math.Pi * Math.Power(18/2, 2) * thickness * numXLarge
+
+weight = volume * 0.5 'weight in ounces (0.5 oz/cu in)
+weight = weight / 16 'weight in pounds (16 oz per pound)
+weight = Math.Round(100 * weight)/100
+
+TextWindow.WriteLine(weight + " pounds of dough")
+
+
